@@ -54,7 +54,31 @@ footer{background:#111827;color:#d1d5db;text-align:center;padding:35px 22px}
 <a class="btn" href="#about">Explore My Story</a>
 </div>
 <div class="photo">
-<strong><img src="elarin.jpg" alt="Niwagira Brian" style="width:450px; height:400px; object-fit:cover; border-radius:12px;"></strong><br><br>
+<strong><img
+    src="elarin.jpg"
+    alt="A photo of my parent"
+    style="
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+        border: 5px solid #6c63ff;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        filter: brightness(110%) contrast(110%) saturate(120%);
+        transition: all 0.4s ease;
+        cursor: pointer;
+    "
+    onmouseover="
+        this.style.transform='scale(1.08) rotate(2deg)';
+        this.style.boxShadow='0 15px 35px rgba(108, 99, 255, 0.6)';
+        this.style.filter='brightness(120%) contrast(115%) saturate(140%)';
+    "
+    onmouseout="
+        this.style.transform='scale(1) rotate(0deg)';
+        this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.4)';
+        this.style.filter='brightness(110%) contrast(110%) saturate(120%)';
+    "
+></strong><br><br>
 </div>
 </div>
 </header>
